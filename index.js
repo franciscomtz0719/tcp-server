@@ -24,7 +24,7 @@ function onClientConnection(sock) {
     console.log(`>> data received : ${data} `);
 
     //prepare and send a response to the client
-    let serverResp = "Hello from the server";
+    let serverResp = "Data received OK";
     sock.write(serverResp);
 
     //close the connection
